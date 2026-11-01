@@ -32,3 +32,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 pytest -q
 ```
+
+## Design explanation / complexity cost
+One complexity cost introduced by the Facade is additional code that needs to be maintained.
+Also, if the order fulfillment process changes, we also need to update the Facade to coordinate the services correctly.
